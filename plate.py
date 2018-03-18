@@ -27,25 +27,60 @@ def fon():
 			canvas.create_rectangle(x, y, x+60, y+57, outline="#C69515", fill = "#ECD598")
 			x+=60
 		y+=57
-#Функция начала игры, размещаем плиты
+#Функция начала игры, рандомно размещаем плиты
 def start_click():
-	plt0.place(x=181, y=140)
-	plt1.place(x=241, y=140)
-	plt2.place(x=301, y=140)
-	plt3.place(x=361, y=140)
-	plt4.place(x=181, y=197)
-	plt5.place(x=241, y=197)
-	plt6.place(x=301, y=197)
-	plt7.place(x=361, y=197)
-	plt8.place(x=181, y=254)
-	plt9.place(x=241, y=254)
-	plt10.place(x=301, y=254)
-	plt11.place(x=361, y=254)
-	plt12.place(x=181, y=311)
-	plt13.place(x=241, y=311)
-	plt14.place(x=301, y=311)
-	plt15.place(x=361, y=311)
+	x1=random.choice(x)
+	y1=random.choice(y)
+	if x1 == 181:
+		x2 = x1 + 60
+		x3 = x2 + 60
+		x4 = x3 + 60
+	if x1 == 241:
+		x2 = x1 - 60
+		x3 = x1 + 60
+		x4 = x3 + 60
+	if x1 == 301:
+		x2 = x1 - 60
+		x3 = x2 - 60
+		x4 = x1 + 60
+	if x1 == 361:
+		x3 = x1 - 60
+		x2 = x3 - 60
+		x4 = x2 - 60
+	if y1 == 140:
+		y2 = y1 + 57
+		y3 = y2 + 57
+		y4 = y3 + 57
+	if y1 == 197:
+		y2 = y1 - 57
+		y3 = y1 + 57
+		y4 = y3 + 57
+	if y1 == 254:
+		y2 = y1 - 57
+		y3 = y2 - 57
+		y4 = y1 + 57
+	if y1 == 311:
+		y3 = y1 - 60
+		y2 = y3 - 60
+		y4 = y2 - 60
+	plt0.place(x=x1, y=y1)
+	plt1.place(x=x3, y=y3)
+	plt2.place(x=x2, y=y2)
+	plt3.place(x=x4, y=y4) 
+	plt4.place(x=x2, y=y1)
+	plt5.place(x=x3, y=y2)
+	plt6.place(x=x4, y=y3)
+	plt7.place(x=x2, y=y4)
+	plt8.place(x=x2, y=y3)
+	plt9.place(x=x1, y=y4)
+	plt10.place(x=x4, y=y2)
+	plt11.place(x=x3, y=y1)
+	plt12.place(x=x1, y=y2)
+	plt13.place(x=x3, y=y4)
+	plt14.place(x=x1, y=y3)
+	plt15.place(x=x4, y=y1)
 	btn1.destroy()
+
 	fon()
 
 #Функции для окрашивания плит в случае правильной последовательности и сброс предыдущих ответов в случае ошибки
@@ -138,6 +173,7 @@ def click14():
 
 def click15():
 	if plt14["bg"] == "green":
+		start_click()
 		rin()
 	else:
 		rin()
@@ -161,6 +197,9 @@ text = '''Рад Вас видеть в моей мини игре “Поряд
 Приятной игры!'''
 canvas.create_text(330, 260, text = text, fill = "black", font =("Helvetica", "14"))
 
+#Необходимые координаты
+x=[181, 241, 301, 361]
+y=[140, 197, 254, 311]
 #Создаем плитки с номерами 
 plt0 = Button(root, text = "1", width = 7, height = 3, bg = "#E3E0D5", command =  click0)
 plt1 = Button(root, text = "2", width = 7, height = 3, bg = "#E3E0D5", command =  click1)
