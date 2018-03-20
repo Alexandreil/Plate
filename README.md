@@ -2,20 +2,23 @@
   
  В начале игры Вы узнаете правила. 
  <p align="center">
-  <img src="https://sun9-3.userapi.com/c830709/v830709674/afd7d/L0rpEzFiu5Y.jpg" width="350"/>
+  <img src="https://sun9-3.userapi.com/c830709/v830709674/afd7d/L0rpEzFiu5Y.jpg" width="400"/>
 </p>
  
  После нажатия кнопки “Начать игру” Вас встретит 64 плитки, рандомно расположенные, с которыми Вы будете взаимодействовать. Для усложнения игры добавлены смайлики, которые будут Вас отвлекать.
- 
- ![alt text](https://sun9-9.userapi.com/c830709/v830709674/afd66/X-1dDA4j87Q.jpg)
+  <p align="center">
+  <img src="https://sun9-9.userapi.com/c830709/v830709674/afd66/X-1dDA4j87Q.jpg" width="350"/>
+</p>
  
  Также имеется строка с заданием. 
- 
- ![alt text](https://sun9-5.userapi.com/c830709/v830709674/afd6d/xk0FEfgTMCI.jpg)
+ <p align="center">
+  <img src="https://sun9-5.userapi.com/c830709/v830709674/afd6d/xk0FEfgTMCI.jpg" width="350"/>
+</p>
  
  Делая все правильно, плитки буду окрашиваться в зеленый цвет.
- 
- ![alt text](https://sun9-4.userapi.com/c830709/v830709674/afd75/CQa7ly-91jk.jpg)
+  <p align="center">
+  <img src="https://sun9-4.userapi.com/c830709/v830709674/afd75/CQa7ly-91jk.jpg" width="350"/>
+</p>
  
  Сразу хочу сказать, что из-за одной ошибки Вы будете начинать игру заново.
 
